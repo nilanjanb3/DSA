@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
-#define FL(a,b) for(int i=a;i<b;i++)
+#define FLI(a,b) for(int i=a;i<b;i++)
+#define FLJ(a,b) for(int j=a;j<b;j++)
 #define ITRL(x) for(auto itr = x.begin();itr!=x.end();itr++)
 #define ll long long int
 #define PB push_back
@@ -9,6 +10,6 @@ using namespace std;
 
 int main()
 {
-    
+
     return 0;
 }
