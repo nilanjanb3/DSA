@@ -1,0 +1,27 @@
+Include <algorithm> header file.
+
+1. Sorting -> sort(startaddress, endaddress)
+2. Searching -> binary_search(startaddress, endaddress, valuetofind)
+3. Reverse -> reverse(first_iterator, last_iterator)
+4. Accumulate -> accumulate(first_iterator, last_iterator, intial_value_of_sum)
+
+Array algorithms in C++ STL (all_of, any_of, none_of, copy_n and iota)
+
+1. all_of(arr,arr+5,[](int x){return x>0;})?cout<<"Yes":cout<<"No";
+2. any_of(arr,arr+5,[](int x){return x>0;})?cout<<"Yes":cout<<"No";
+3. none_of(ar, ar+6, [](int x){ return x<0; })? cout << "Positive" : cout << "Negative";
+4. copy_n(inputIteratorFirst,size,outputIteratorResult)
+5. iota(array,array+5,20);
+6. is_partitioned(arr, arr+6, [](int x){return x%2==0;})?cout<<"Yes":cout<<"No";
+7. partition(arr,arr+6,[](int x){return x%2==0;});
+
+std:: valarray class in C++
+
+valarray<int> varr = { 10, 2, 20, 1, 30 }; 
+1. varr1 = varr.apply([](int x){return x=x+5;});
+2. varr.sum()
+3. varr.max()
+4. varr.min()
+5. varr1 = varr.shift(2); -> (i) +VE value left ship (ii) -VE value right shift
+6. varr1 = varr.cshift(-3); -> * Circular Rotation
+7. varr1.swap(varr2); 
